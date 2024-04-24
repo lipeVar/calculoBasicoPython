@@ -5,7 +5,7 @@ print('RESULTADOS')
 print('Adição: ', num1 + num2)
 print('Subtração: ', num1 - num2)
 print('Multiplicação: ', num1 * num2)
-
+#IF para verificar se o numero digitado é 0
 if(num1 != 0 and num2 != 0):
     print('Divisão: ', num1 / num2)
 else:
