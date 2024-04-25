@@ -1,17 +1,18 @@
-num1 = float(input('Digite o primeiro número: '))
-num2 = float(input('Digite o segundo número: '))
 loop = 'S'
-
-print('1- Adição')
-print('2- Subtração')
-print('3- Multiplicação')
-print('4- Divisão')
-print('5- Encerrar')
-
-resp = int(input('Escolha  o tipo de calculo deseja: '))
-
 while loop == 'S':
-    if resp== 1:
+
+    num1 = float(input('Digite o primeiro número: '))
+    num2 = float(input('Digite o segundo número: '))
+
+    print('1- Adição')
+    print('2- Subtração')
+    print('3- Multiplicação')
+    print('4- Divisão')
+    print('5- Encerrar')
+
+    resp = int(input('Escolha  o tipo de calculo deseja: '))
+    
+    if resp == 1:
         print ('A resposta de ', num1, '+', num2, '= ', num1 + num2)
     elif resp == 2:
         print ('A resposta de ', num1, '-', num2, '= ', num1 - num2)
@@ -25,4 +26,6 @@ while loop == 'S':
     elif resp == 5:
         print('Obrigado, volte sempre!')
         break
-    loop = input('deseja rever sua resposta?(S)sim (N)não: ')    
+    else:
+        print('Por valor escolha uma das opções acima')
+    loop = input('deseja calcular outros valores?(S)sim (N)não: ')    
