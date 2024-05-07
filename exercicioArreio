@@ -1,0 +1,24 @@
+def recebeValor():
+    lista = []
+    while True:
+        valores = input("Digite um valor qualquer (ou digite 'sair'): ")
+        if valores.lower() == 'sair':
+            print('Listagem encerrada!')
+            break
+        lista.append(valores)
+    return lista
+
+def mostraValor(lista):
+   print('Valores digitados:')
+   fim = 0
+   while fim < len(lista):
+       print(lista[fim])
+       fim += 1
+   
+def main():
+     listaValores = recebeValor()
+     mostraValor(listaValores)
+
+
+main()
+
